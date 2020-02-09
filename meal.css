@@ -89,10 +89,7 @@ body{
 	cursor: pointer;
 }
 
-.meal-float-right{
-	margin-left: auto !important;
-	margin-right: 0 !important;
-}
+
 .type-none{
 	display: none !important;
 }
