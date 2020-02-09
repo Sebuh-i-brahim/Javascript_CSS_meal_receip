@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="meal.css">
+</head>
+<body>
+<div class="container-fluid meal">
+
+	 <div class="meal-div bg-white rounded-lg border meal-header shadow-sm mt-4">
+	 	<h5 class="meal-header-text">Create meal Plan</h5>
+	 </div>
+	 <div class="meal-div bg-white rounded-lg border row meal-row mt-4 shadow-sm pb-4 pt-4">
+	 	<div class="col-md-6">
+	 		<div class="row meal-row">
+	 			<div class="col-6 ml-0 mr-auto meal-plan-name">
+		 			<input type="text" class="form-control form-control-sm rounded-0 border-light border-width-2px" placeholder="Plan Name" id="planName">
+		 		</div>
+		 		<div class="col-6 mr-0 ml-auto meal-plan-category">
+		 			<select name="" id="planCategory" class="form-control form-control-sm rounded-0 border-light meal-input-text-color border-width-2px" placeholder="Choose Plan Category">
+		 				<option selected>Choose Plan Category</option>
+		 			</select>	
+		 		</div>
+	 		</div>
+	 		<div class="row meal-row mt-3 ml-0 mr-0">
+	 			<textarea name="" id="planDescription" cols="30" rows="8" class="form-control rounded-0 border-light border-width-2px" placeholder="Description"></textarea>
+	 		</div>
+	 	</div>
+	 	<div class="col-md-6 mt-auto mb-0">
+ 			<label for="addPlanImage" class="meal-input-text-color mt-3">Featured image for plan</label>
+ 			<div class="row">
+	 			<div id="addPlanImage" class="border border-light meal-image meal-image-add border-width-2px ml-3 addPlanImage">
+	 				<div class="type-hidden">
+					     <input type="file" class="planImage"> 
+					</div>
+	 				<div class="meal-search-img-center">
+	 					<div class="meal-search-img">
+	 						<i class="fa fa-plus-circle" aria-hidden="true"></i>
+	 					</div>
+	 				</div>
+	 				<div class="text-aligin-center meal-input-text-color">Add Image</div>
+
+	 			</div>
+	 			<div class="border border-light meal-image border-width-2px p-auto ml-4 picture">
+	 				<div class="meal-picture-img">
+	 					<i class="fa fa-picture-o"></i>
+	 				</div>
+	 			</div>
+ 			</div> 
+	 	</div>	
+	 </div>
+
+
+
+
+	<!--                                    This is Recipes area                                  -->
+
+
+
+
+	 <div class="meal-div bg-white rounded-lg border meal-header shadow-sm mt-4">
+	 	<h5 class="meal-header-text">Add Recipes For This Plan</h5>
+	 </div>
+ 		<div class="mainDiv">
+ 			<div class="receipe meal-div bg-white rounded-lg border mt-4 shadow-sm pb-4 pt-4 meal-block">
+		 		<input type="hidden" class="receipe-id" value="1">
+		 		<div class="row meal-row pl-3">
+		 			<div class="col-md-3 ml-0 meal-plan-name mt-3">
+			 			<input type="text" class="form-control form-control-sm border-light border-width-2px receipeName" placeholder="Recipe name">
+			 		</div>
+			 		<div class="col-md row ml-0 meal-row mt-3">
+				 		<div class="custom-control custom-checkbox mt-1">
+							<input type="checkbox" class="custom-control-input bakeCheck">
+							<label class="custom-control-label" for="bakeCheck1">Bake</label>
+						</div>
+						<div class="custom-control custom-checkbox mt-1 ml-2">
+							<input type="checkbox" class="custom-control-input broilCheck">
+							<label class="custom-control-label" for="broilCheck1">Broil</label>
+						</div>
+				 		<div class="custom-control custom-checkbox mt-1 ml-2">
+							<input type="checkbox" class="custom-control-input microwaveCheck">
+							<label class="custom-control-label" for="microwaveCheck1">Microwave</label>
+						</div>
+						<div class="custom-control custom-checkbox mt-1 ml-2">
+							<input type="checkbox" class="custom-control-input fryCheck">
+							<label class="custom-control-label" for="fryCheck1">Fry</label>
+						</div>
+						<div class="custom-control custom-checkbox mt-1 ml-2">
+							<input type="checkbox" class="custom-control-input grilCheck">
+							<label class="custom-control-label" for="grilCheck1">Gril</label>
+						</div>	
+			 		</div>
+					
+		 		</div>
+		 		<div class="pl-3 pr-3 mt-3">
+		 			<textarea cols="30" rows="8" class="form-control rounded-0 border-light border-width-2px recipeDescription" placeholder="Description of this Recipe"></textarea>
+		 		</div>
+		 		
+		 		
+		 		<div class="row meal-row mt-3">
+		 			<div class="col-md-4 mt-3">
+
+
+
+		 				<!--                        Image add Receipe                                 -->
+
+
+
+		 				<label class="meal-input-text-color">Featured image for plan</label>
+		 				<div class="row meal-row">
+		 					<div class="border border-light meal-image meal-image-add border-width-2px addImage">
+		 						<div class="type-hidden">
+								    <input type="file" class="receipeImage"> 
+								</div>
+				 				<div class="meal-search-img-center">
+				 					<div class="meal-search-img">
+				 						<i class="fa fa-plus-circle" aria-hidden="true"></i>
+				 					</div>
+				 				</div>
+				 				<div class="text-aligin-center meal-input-text-color">Add Image</div>
+				 			</div>
+				 			<div class="border border-light meal-image border-width-2px p-auto ml-4 picture">
+				 				<div class="meal-picture-img">
+				 					<i class="fa fa-picture-o"></i>
+				 				</div>
+				 			</div>
+		 				</div>	 				
+		 			</div>
+		 			<div class="col-md-2 mt-3">
+		 				<label class="meal-input-text-color">Cooking Time</label>
+		 				<div class="">
+		 					<select class="form-control form-control-sm rounded-0 border-light meal-input-text-color border-width-2px hours" placeholder="Choose Plan Category">
+				 				<option selected>Hours</option>
+				 			</select>
+				 			
+				 			<select class="form-control form-control-sm rounded-0 border-light meal-input-text-color border-width-2px minutes mt-3" placeholder="Choose Plan Category">
+				 				<option selected>Minutes</option>
+				 			</select>
+		 				</div>
+		 			</div>
+		 			<div class="col-md-6 pt-4 mt-3">
+		 				<input type="text" class="form-control form-control-sm rounded-0 border-light border-width-2px mt-2 videoUrl" placeholder="Video Url">
+		 			</div>
+		 		</div>
+
+
+
+
+		 		<!--                      Adding ingredient for receipe area                        -->
+
+
+
+				<div class="row meal-row mt-5">
+					<h6 class="meal-header-text">Add ingredient for the Recipe</h6>
+				</div>
+				<div class="ingredientForm mt-3">
+					<div class="row meal-row">
+						<div class="col-md-3">
+							<input type="text" class="form-control form-control-sm rounded-0 border-light border-width-2px mt-2 ingredientName" placeholder="Name">
+						</div>
+						<div class="col-md-3">
+							<input type="text" class="form-control form-control-sm rounded-0 border-light border-width-2px mt-2 quantity" placeholder="Quantity">
+						</div>
+						<div class="col-md-3">
+							<select class="form-control form-control-sm rounded-0 border-light meal-input-text-color border-width-2px mt-2 unit">
+				 				<option selected>Unit</option>
+				 			</select>
+						</div>
+						<div class="col-md-3">
+							<input type="text" class="form-control form-control-sm rounded-0 border-light border-width-2px mt-2 average-price" placeholder="Average price">
+						</div>
+					</div>	
+				</div>
+				
+				<div class="row meal-row mt-3">
+					<input type="hidden" class="receipeId" value="1">
+					<input type="hidden" class="ingredientCount" value="1">
+					<div class="col-md-3 add-ingrident meal-input-text-color meal-header-text">
+						<i class="fa fa-plus"></i> Add ingredient for the Recipe
+					</div>
+				</div>
+
+				
+				<!--                           Cooking Instructions   Adding                          -->
+
+
+				<div class="row meal-row mt-5">
+					<h6 class="meal-header-text">Cooking Instructions</h6>
+				</div>
+				<div class="instructionsForm mt-3">
+					<div class="instructRow">
+						<div class="row meal-row mt-2">
+							<input type="text" class="form-control form-control-sm rounded-0 border-light border-width-2px ml-3 mr-3 step" placeholder="Step 1" id="step1-1">
+						</div>
+						
+						<div class="row meal-row mt-2">
+							<textarea name="" id="stepInstructions1-1" cols="30" rows="4" class="form-control rounded-0 border-light border-width-2px ml-3 mr-3 step-instructions" placeholder="Instructions for step 1"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row meal-row mt-3">
+					<input type="hidden" class="receipeId" value="1">
+					<input type="hidden" class="instructionCount" value="1">
+					<div class="col-md-3 add-insructions meal-input-text-color meal-header-text">
+						<i class="fa fa-plus"></i> Add More Step
+					</div>
+				</div>
+				
+				<button class="btn btn-sm rounded-0 btn-secondary meal-float-right addingReceipe mt-3 mb-3 meal-block"><i class="fa fa-plus"></i> Add More Receipe</button>
+			</div>
+		</div>
+	 <div class="row meal-row mt-3 pr-2 mb-2">
+	 	<button class="btn btn-sm rounded-0 btn-secondary ml-auto mr-3 exit pl-5 pr-5">Exit</button>
+	 	<button class="btn btn-sm rounded-0 btn-primary mr-5 save pl-5 pr-5">Save</button>
+	 </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+<script src="function.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
